@@ -1,12 +1,13 @@
 require 'rspec'
-def fizzbuzz(int)
-  if int int % 5 == 0 && int % 3 == 0 
-    return "Fizz"
-  elsif int % 5 == 0 
-    return "Buzz"
-  elsif int % 3 == 0 
-    return "FizzBuzz"
-  else 
-    return nil
+
+def fizzBuzz(number)
+  if number % 3 == 0 && number % 5 == 0
+    "FizzBuzz"
+  elsif number % 3 == 0
+    "Fizz"
+  elsif number % 5 == 0
+    "Buzz"
+  else
+    number
   end
 end
